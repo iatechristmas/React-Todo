@@ -26,7 +26,7 @@ class App extends React.Component {
   addTask = (taskName) => {
     const newTask = {
       task: taskName,
-      id: new Date(),
+      id: Math.floor(Math.random() * 1500000000000 + 1),
       completed: false,
     };
     this.setState({
@@ -50,9 +50,7 @@ class App extends React.Component {
       }),
     });
   };
-  // you will need a place to store your state in this component.
-  // design `App` to be the parent component of your application.
-  // this component is going to take care of state, and any change handlers you need to work with your state
+
   render() {
     return (
       <div>
