@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../styles.css";
 
 class TodoForm extends Component {
   constructor() {
@@ -25,13 +26,15 @@ class TodoForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          name="task"
-          value={this.state.task}
-          onChange={this.handleChanges}
-        />
-        <button>Add</button>
+        <div className="form-flex">
+          <input
+            type="text"
+            name="task"
+            value={this.state.task}
+            onChange={this.handleChanges}
+          />
+          <button class="add-button">Add</button>
+        </div>
       </form>
     );
   }
