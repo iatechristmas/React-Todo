@@ -1,0 +1,47 @@
+html,
+body,
+.app-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.task.completed {
+  background-color: red;
+  text-decoration: line-through;
+  background-color: white;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  margin: 1% auto 1% auto;
+}
+
+.add-button {
+  box-shadow: inset 0px 1px 0px 0px #a4e271;
+  background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+  background-color: #89c403;
+  border-radius: 6px;
+  border: 1px solid #74b807;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528009;
+}
+.add-button:hover {
+  background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+  background-color: #77a809;
+}
+.add-button:active {
+  position: relative;
+  top: 1px;
+}
